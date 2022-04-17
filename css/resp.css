@@ -1,0 +1,179 @@
+@media screen and (max-width: 600px) {
+    .column-gallery {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+    .nav-list{
+        align-items: center;
+        flex-direction: column;
+        margin: auto;
+    }
+    .navbar{
+        position: relative;
+    }
+    .invitation{
+        flex-direction: column;
+    }
+    .burger{
+        display: block !important;
+    }
+
+    .h-nav{
+        height: 170px;
+    }
+
+    .v-class{
+        display: none !important;
+    }
+    .dp{
+        width: 80% !important;
+    }
+    .invited{
+        width: 95% !important;
+    }
+    .member-family{
+        width: 80% !important;
+    }
+    .member-family-2{
+        width: 80% !important;
+    }
+    .family-image{
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .member-family .papa{
+        align-content: flex-end;
+    }
+    .background{
+        background-size: 100% !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+        background-color: rgb(250, 235, 215,0.7) !important;
+    }
+    .title-img{
+        width: 65% !important;
+    }
+    .firstSection{
+        height: 90vh;
+    }
+   
+    .date-title-1{
+        font-size: 7vw !important;
+        text-align: left;
+        margin: 0 !important;
+    }
+    .firstSection .line {
+        height: 30vw !important;
+        margin: 0 0 !important;
+    }
+    .head-title{
+        font-size: 10vw !important;
+    }
+    .whenAndWhere .content {
+        width: 80% !important;
+    }
+    .when-and-where .text-big{
+        font-size: 14vw !important;
+    }
+    .whenAndWhere .title1{
+        font-size: 8vw !important;
+        font-weight: bold;
+    }
+    
+    .whenAndWhere .title2{
+        font-size: 6vw !important;
+    }
+    
+    .whenAndWhere .title3{
+        font-size: 4vw !important;
+    }
+    
+    .whenAndWhere .title4{
+        font-size: 3vw !important;
+    }
+    .text-big{
+        font-size: 18vw !important;
+        
+    }
+    .invitation .text-small{
+        font-size: 6vw !important;
+
+    }
+    footer .text-big {
+        font-size: 14vw !important;
+        
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .firstHalf{
+        flex-direction: column !important;
+        width: 45% !important;
+    }
+    
+}
+.center {
+    text-align: center;
+    border: 3px solid green;
+  }
+@media screen and (max-width: 800px) {
+    .column-gallery {
+        -ms-flex: 45%; 
+        flex: 45%;
+        max-width: 45%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .row-gallery{
+        display: none;
+    }
+ 
+    .row-gallery-800{
+        display: -ms-flexbox;  /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap; /* IE10 */ 
+        flex-wrap: wrap;
+        padding: 0 4px;
+    }
+    .family-image{
+        width: 50% !important;
+    }
+    
+}
+
+@media screen and (max-width: 860px){
+    .nav-list{
+        align-items: center;
+        flex-direction: column;
+        margin: auto;
+    }
+    .navbar{
+        position: relative;
+    }
+    
+    .burger{
+        display: block !important;
+    }
+
+    .h-nav{
+        height: 70px;
+    }
+
+    .v-class{
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .box-main{
+        width: 100%;
+    }
+
+    .invitation{
+        width: 100%;
+    }
+    
+    
+}

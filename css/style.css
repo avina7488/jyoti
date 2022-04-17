@@ -1,0 +1,309 @@
+@import 'resp.css';
+@import 'nav.css';
+@import 'card.css';
+@import 'countdown.css';
+@import 'font.css';
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.title1{
+    font-size: large;
+}
+
+.firstSection{
+    /* height: 95vh;  */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(250, 235, 215, 0.7);
+
+}
+
+.box-main{
+    display: flex; 
+    align-items: center;
+    color: white; 
+    width: 100%;
+    background-color: rgba(250, 235, 215, 0.7);
+    justify-content: center;
+}
+.title-img{
+    width: 35%;
+}
+.BunniNvineet-img{
+    border-radius: 50%;
+    padding: 15px;
+}
+.firstHalf{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    /* align-items: center; */
+}
+
+.secondHalf{
+    width: unset;
+    display: flex;
+}   
+.head-title{
+    padding: 0 2vw;
+    font-size: 6vw;
+    text-align: right;
+    color: darkslategrey;
+
+}
+.date-title-1{
+    padding: 20px;
+    font-size: 4.5vw;
+    color: brown;
+    text-align: center;
+}
+.date-title-2{
+    display: none;
+    padding: 20px;
+    font-size: 6vw;
+    color: brown;
+    text-align: center;
+}
+.firstSection .line{
+    height:18vw;
+    width: 4px;
+    margin: 0 35px;
+}
+
+.invitation{
+    display: flex;
+    /* background-color: beige; */
+    align-items: center;
+    width: 100%;
+
+}
+
+.invitation .text-big {
+    color: rgb(199, 22, 22);
+    /* font-size: 50px;  */
+    font-weight: bolder;   
+}
+
+.invitation .text-small{
+    margin-left: 12.5%;
+    font-size:30px;
+    text-align: center;
+    width: 75%; 
+}
+
+.invitation .text-small{    
+    border: none;
+    border-radius: 5%;
+    color:darkslategray;
+    font-size: 2vw;  
+    padding: 10px;  
+}
+
+.container-invitation{
+    display: flex;
+    width: 100% !important;
+    align-items: center;
+ }
+
+.dp{
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 30%;
+    height: auto;
+    padding: 1%;
+    margin: 5px;
+}
+.invited{
+    width: 30%;
+}
+.whenAndWhere{
+    background: rgba(212, 205, 205, 0.7) url('../assets/venu.jpg');
+    width: 80%;
+    margin: auto;
+    background-repeat:no-repeat;    
+    background-color:antiquewhite;
+    background-position:center;
+    background-size: cover;
+    background-blend-mode: darken;
+    padding: 10px;
+}
+
+.whenAndWhere .text-big{
+    font-size: 32px;
+    color: rgba(32, 20, 20, 0.63);
+
+}
+
+.whenAndWhere .content {
+    margin-bottom: 20px;
+    width: 60%;
+    margin: auto;
+    font-size: larger;
+    padding: 10px;
+    border-radius: 5%;
+    color: darkslategray;
+    background-color: rgba(250, 235, 215, 0.7);
+    text-align: center;
+}
+
+.whenAndWhere .title1{
+    font-size: 3vw;
+    font-weight: bold;
+    font-family: Great Vibes;
+}
+
+.whenAndWhere .title2{
+    font-size: 2vw;
+}
+
+.whenAndWhere .title3{
+    font-size: 1vw;
+}
+.whenAndWhere .content a{
+    text-decoration: none;
+    color: darkslategray;
+
+}
+
+.family-image{
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 40%;
+    padding: 20px;
+    margin: 5px;
+    margin-left: 10%;
+}
+
+.member-family{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 60%;
+    
+
+}
+
+.member-family-2{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.member-family papa{
+    flex-direction: row-reverse;
+}
+.family-content{
+    padding: left 10px;
+    overflow: hidden;
+}
+
+
+.family-content{
+    padding: left 10px;
+    overflow: hidden;
+}
+
+
+.row-gallery {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+    margin-left: 5%;
+}
+
+.row-gallery-800{
+    display: none;  
+}
+
+/* Create 3 equal columns that sits next to each other */
+.column-gallery {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    max-width: 30%;
+    padding: 0 4px;
+}
+
+.column-gallery img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+footer{
+    align-items: center;
+    text-align: center;
+    background-color: bisque;
+    padding: 20px;
+}
+
+footer .text-big{
+    font-size: 35px;
+    padding: 0;
+}
+
+.footer-icon{
+    width: 100px;
+}
+
+
+.popup{
+    background-color: #ffffff;
+    width: 240px;
+    padding: 30px 40px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 8px;
+    font-family: "Poppins",sans-serif;
+    display: none; 
+    text-align: center;
+}
+.popup button{
+    display: block;
+    margin:  0 0 20px auto;
+    background-color: transparent;
+    font-size: 30px;
+    color: #ffffff;
+    background: #03549a;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.popup h8{
+  margin-top: -20px;
+  font-weight: bold;
+}
+.popup h9{
+  margin-top: -20px;
+  font-style: italic;
+}
+.popup p{
+    font-size: 14px;
+    text-align: justify;
+    margin: 20px 0;
+    line-height: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+bf{
+    display: block;
+    width: 150px;
+    position: relative;
+    margin: 10px auto;
+    text-align: center;
+    background-color: #8b2806;
+    border-radius: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 0;
+}

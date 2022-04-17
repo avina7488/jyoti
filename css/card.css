@@ -1,0 +1,231 @@
+body {
+    color: #333;
+    font-family: Arial, Helvetica, serif;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    background: rgba(233, 142, 24, 0.521);
+}
+  
+  /* h1 {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    margin: 0 0 5% 0;
+    padding: 0.5em;
+    margin: 0 0 5% 0;
+  } */
+  
+  .cardBox {
+    float: left;
+    font-size: 1.3em;
+    margin: 1% 0 0 1%;
+    perspective: 800px;
+    transition: all 0.3s ease 0s;
+    width: 23.7%;
+  }
+  
+  .cardBox:hover .card {
+    transform: rotateY( 180deg);
+  }
+  
+  .card {
+    background: bisque;
+    cursor: default;
+    height: 300px;
+    border-radius: 5%;
+    transform-style: preserve-3d;
+    transition: transform 0.4s ease 0s;
+    width: 100%;
+    -webkit-animation: giro 1s 1;
+    animation: giro 1s 1;
+    color:rgb(18, 19, 18);
+  }
+  
+  .card p {
+    margin-bottom: 1.8em;
+  }
+  
+  .card .front,
+  .card .back {
+    backface-visibility: hidden;
+    box-sizing: border-box;
+    border-radius: 5%;
+    display: block;
+    font-size: 1.2em;
+    height: 100%;
+    padding: 0.8em;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .card .front strong {
+    background: #fff;
+    border-radius: 100%;
+    color: rgb(22, 21, 21);
+    font-size: 2em;
+    line-height: 30px;
+    padding: 0 7px 4px 6px;
+  }
+  
+  .card .back {
+    transform: rotateY( 180deg);
+    color:azure;
+    background: url('../assets/madapchhadan.webp');
+  }
+  
+  .card .back a {
+    padding: 0.3em 0.5em;
+    background: #333;
+    color: #fff;
+    text-decoration:none;
+    border-radius: 1px;
+    font-size: 0.9em;
+    transition: all 0.2s ease 0s;
+  }
+  
+  .card .back a:hover {
+    background: #fff;
+    color: #333;
+    text-shadow: 0 0 1px rgb(12, 12, 12);
+  }
+  
+  .cardBox:nth-child(1) .card .back {
+    /* background: cornflowerblue; */
+    background: url('../assets/matkor.jpg');
+    background-position:center;
+    background-size: cover;
+    
+
+  }
+  
+  .cardBox:nth-child(2) .card .back {
+    background: rgb(7, 7, 7);
+    background: url('../assets/sangeet-mehndi-500x500.jpg');
+    background-position:center;
+    background-size: cover;
+  }
+  
+  .cardBox:nth-child(3) .card .back {
+    background: yellowgreen;
+    background: url('../assets/haldi-backdrop-on-indian-wedding-260nw-2099491168.webp');
+    background-position:center;
+    background-size: cover;
+  
+  }
+  
+  .cardBox:nth-child(4) .card .back {
+    background: tomato;
+    background: url('../assets/grithdhari.jpg');
+    background-position:center;
+    background-size: cover;
+  }
+  .cardBox:nth-child(5) .card .back {
+    background: tomato;
+    background: url('../assets/subh\ .jpg');
+    background-position:center;
+    background-size: cover;
+  }
+
+   .cardBox:nth-child(1) .card .front {
+    /* background: cornflowerblue; */
+    background: url('../assets/matkor1.jpg');
+    background-position:center;
+    background-size: cover;
+    color: rgb(220, 209, 209);
+
+  }
+
+  
+  .cardBox:nth-child(2) .card .front {
+    background: url('../assets/mehandi1.jpg');
+    background-position:center;
+    background-size: cover;
+    color: rgb(220, 209, 209);
+  }
+
+  .cardBox:nth-child(3) .card .front {
+    background: yellowgreen;
+    background: url('../assets/dev.jpg');
+    background-position:center;
+    background-size: cover;
+    color: rgb(220, 209, 209);
+  }
+
+  .cardBox:nth-child(4) .card .front {
+    background: orange;
+    background: url('../assets/grithdhariq.jpeg');
+    background-position:center;
+    background-size: cover;
+    color: rgb(220, 209, 209);
+  }
+  
+    .cardBox:nth-child(5) .card .front {
+      background: tomato;
+      background: url('../assets/subhaa.jpg');
+      background-position:center;
+      background-size: cover;
+      color: rgb(252, 17, 17);
+        
+    }
+  
+  .cardBox:nth-child(2) .card {
+    -webkit-animation: giro 1.5s 1;
+    animation: giro 1.5s 1;
+    text-align: center;
+  }
+  
+  .cardBox:nth-child(3) .card {
+    -webkit-animation: giro 2s 1;
+    animation: giro 2s 1;
+  }
+  
+  .cardBox:nth-child(4) .card {
+    -webkit-animation: giro 2.5s 1;
+    animation: giro 2.5s 1;
+  }
+  .cardBox:nth-child(5) .card {
+    -webkit-animation: giro 2.5s 1;
+    animation: giro 2.5s 1;
+  }
+  @-webkit-keyframes giro {
+    from {
+      transform: rotateY( 180deg);
+    }
+    to {
+      transform: rotateY( 0deg);
+    }
+  }
+  
+  @keyframes giro {
+    from {
+      transform: rotateY( 180deg);
+    }
+    to {
+      transform: rotateY( 0deg);
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .cardBox {
+      margin-left: 2.8%;
+      margin-top: 3%;
+      width: 46%;
+    }
+    .card {
+      height: 285px;
+    }
+    .cardBox:last-child {
+      margin-bottom: 3%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .cardBox {
+      width: 45.5%;
+    }
+    .card {
+      height: 200px;
+    }
+  }
