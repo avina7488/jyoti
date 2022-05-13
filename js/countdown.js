@@ -49,7 +49,7 @@
     }
     //end
     
-    const countDown = new Date("05/11/2022").getTime(),
+    const countDown = new Date("05/11/2023").getTime(),
     
         x = setInterval(function() {    
   
@@ -63,7 +63,7 @@
   
           //do something later when date is reached
           if (distance < 0) {
-            document.getElementById("headline").innerText = "Happily Married";
+            document.getElementById("headline").innerText = "Happy Marriage Anniversaary";
             document.getElementById("countdown").style.display = "none";
             document.getElementById("content").style.display = "block";
             clearInterval(x);
